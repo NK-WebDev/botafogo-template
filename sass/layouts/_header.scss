@@ -1,0 +1,26 @@
+body{
+    background: black;
+    height: 100vh;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+
+    &--link{
+        color: $white;
+        text-decoration: none;
+        padding: 1em 2em;
+        font-size: 1.8rem;
+        transition: color 250ms ease-out;
+        &:hover,&:focus{
+            color: $primary;
+        }
+    }
+
+    &--logo img{
+        height: 80px;
+    }
+}
