@@ -1,0 +1,23 @@
+.about{
+    background-attachment: fixed;
+    background-size: cover;
+    &--container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &--block{
+        max-width: 400px;
+        border: 10px solid $dark-color;
+        background-image: url('../img/paper.png');
+    }
+
+    &--title{
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-shadow: -2px 2px 0px rgba($color: $dark-color, $alpha: 0.2),
+        -3px 3px 0px rgba($color: $dark-color, $alpha: 0.4),
+        -5px 5px 0px rgba($color: $dark-color, $alpha: 0.6);
+    }
+}

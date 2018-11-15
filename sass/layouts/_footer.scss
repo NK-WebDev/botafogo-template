@@ -1,0 +1,24 @@
+.footer{
+    background: $dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    color: $white;
+    text-align: center;
+    &--logo{
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    p{
+        margin: 0.3em 0;
+    }
+
+    &--container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}

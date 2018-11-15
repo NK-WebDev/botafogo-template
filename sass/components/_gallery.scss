@@ -1,0 +1,42 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    &--item{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        &::before{
+            content: '';
+            //background: $primary-color;
+            background-image: linear-gradient(120deg, $primary-color-light 0%, $primary-color-dark 100%);
+            opacity: 0.3;
+            z-index: 1;
+            transition: opacity 200ms cubic-bezier(.78,.29,0,.82);
+        }
+        &:hover,&:focus{
+            .gallery--img{
+                transform: scale(1.35);
+            }
+            &::before{
+                opacity: 0;
+            }
+        }
+    }
+    &--img,&--item::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &--img{
+        transition: all .3s ease-in-out;
+    }
+    &--icon{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}

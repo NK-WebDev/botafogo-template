@@ -1,0 +1,16 @@
+// Responsive breakpoints
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: 1280px;
+$size-2x: 1440px;
+
+$responsive-breakpoint: $size-xs;
+
+// Z-index
+$zindex-0: 1;
+$zindex-1: 100;
+$zindex-2: 200;
+$zindex-3: 300;
+$zindex-4: 400;

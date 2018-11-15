@@ -1,0 +1,48 @@
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &--info{
+        padding: 1em 1em;
+        text-align: center;
+    }
+    &--title{
+        font-size: 1.6rem;
+    }
+
+    &--text p{
+        margin: 0.2em 0;
+    }
+
+    &--info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div{
+            margin: 1em 0;
+        }
+        a{
+            color: $dark-color;
+            &:hover, &:focus{
+                color: $primary-color-dark;
+                font-weight: bold;
+            }
+        }
+    }
+    &--social{
+        a:not(:last-child){
+            margin-right: 1.5em;
+        }
+        a{
+            display: inline-block;
+            border: 3px solid transparent;
+            border-radius: 5px;
+            transition: border-color 0.3s ease-in-out;
+            &:hover, &:focus{
+                border-color: $primary-color-dark;
+            }
+        }
+    }
+    &--map{
+        background: $primary-color;
+    }
+}

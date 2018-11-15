@@ -1,0 +1,29 @@
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: rgba($color: $dark-color, $alpha: 0.68);
+    background-blend-mode: darken;
+    color: $white;
+    text-align: center;
+    background-attachment: fixed;
+    &__full{
+        height: 100vh;
+    }
+    &--title{
+        font-size: 3rem;
+    }
+    &--title__large{
+        font-size: 5rem;
+        color: $primary-color;
+    }
+    &--text{
+        font-size: 1.2rem;
+    }
+    &--highlight{
+        color: $primary-color;
+        font-weight: bolder;
+    }
+}
