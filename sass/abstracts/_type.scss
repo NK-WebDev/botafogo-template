@@ -1,13 +1,17 @@
 // Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Muli|Philosopher');
+
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+$base-font-family: 'Muli', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
 $fallback-font-family: "Helvetica Neue", sans-serif;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family;
 $cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family;
 $cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family;
 $cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family;
-$body-font-family: $base-font-family, $fallback-font-family;
+$body-font-family: 'Muli' ,$base-font-family, $fallback-font-family;
+$heading-font-family: 'Philosopher', serif;
 
 // Unit sizes
 $unit-o: .1rem;
@@ -26,9 +30,15 @@ $unit-12: 6rem;
 $unit-16: 6.5rem;
 
 // Font sizes
+
 $html-font-size: 16px;
 $html-line-height: 1.5;
+
 $font-size: 1rem;
 $font-size-sm: .8rem;
 $font-size-lg: 1.2rem;
 $line-height: 1.2rem;
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $heading-font-family, Georgia, 'Times New Roman', Times, serif;
+}

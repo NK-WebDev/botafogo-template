@@ -11,6 +11,10 @@
     background-attachment: fixed;
     &__full{
         height: 100vh;
+        @media (max-width: 570px) {
+            height: auto;
+            padding: 13em 0;
+        }
     }
     &--title{
         font-size: 3rem;
@@ -18,9 +22,16 @@
     &--title__large{
         font-size: 5rem;
         color: $primary-color;
+        margin-bottom: 0.3em;
+        @media (max-width: 570px) {
+            font-size: 3.5rem;
+        }
     }
     &--text{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        @media (max-width: 570px) {
+            font-size: 1.2rem;
+        }
     }
     &--highlight{
         color: $primary-color;

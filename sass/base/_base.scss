@@ -5,3 +5,25 @@ body,html{
     margin: 0;
     padding: 0;
 }
+
+// responsive type
+
+html{
+    @media (max-width: 1200px){
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    @media (max-width: 800px){
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    @media (max-width: 570px){
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    @media (max-width: 360px){
+        font-size: 11px;
+        line-height: 1.2;
+    }
+}
+

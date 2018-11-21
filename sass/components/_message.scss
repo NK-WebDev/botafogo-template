@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 570px) {
+        padding: 4em 0;
+    }
     &--text{
         color: $primary-color;
         font-size: 2.2rem;
@@ -18,5 +21,8 @@
         text-align: center;
         letter-spacing: 5px;
         text-transform: uppercase;
+        @media (max-width: 570px) {
+            font-size: 2rem;
+        }
     }
 }

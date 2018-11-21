@@ -17,4 +17,8 @@
     &__pinterest{
         background-image: url('../img/pinterest.svg');
     }
+    @media (max-width: 570px) {
+        width: 30px;
+        height: 30px;
+    }
 }
