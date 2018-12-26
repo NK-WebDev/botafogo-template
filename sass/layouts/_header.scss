@@ -1,12 +1,32 @@
 #mainHeader{
-    position: absolute;
+    position: fixed;
     width: 100%;
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $dark-color;
+        z-index: -1;
+        transition: height 350ms cubic-bezier(.25,.46,.45,.94);
+    }
 
     // responsive styles
     @media (max-width: 570px) {
         background: $dark-color;
     }
+    &.stick{
+        z-index: 999999;
+        &::before{
+            height: 100%;
+        }
+    }
+
 }
+
 
 .nav-toggle{
     display: none;
@@ -107,9 +127,17 @@
         }
     }
 
-    &--logo img{
-        height: 80px;
+    &--logo{
+        a:focus,a:active{
+            color: transparent;
+            box-shadow: none;
+        }
+        img{
+            height: 80px;
+        }
     }
+
+    
 
     // responsive styles
     @media (max-width: 570px) {
