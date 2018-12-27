@@ -1,3 +1,15 @@
+// setup rellax paralax plugin
+
+const parallax = document.querySelectorAll(".parallax");
+window.addEventListener("scroll", function () { 
+    let offset = window.pageYOffset;
+    parallax.forEach(function (element) {  
+        element.style.backgroundPositionY = (offset - element.offsetTop) * 0.4 + "px";
+     });
+ });
+
+
+
 /// mobile menu toggle
 
 const TOGGLEBTN = document.querySelector(".nav-toggle--btn");
@@ -11,7 +23,7 @@ TOGGLEBTN.addEventListener("click",function () {
 // smooth scrolling
 
 let scroll = new SmoothScroll('a[href*="#"]',{
-    speed: 300,
+    speed: 450,
     easing: 'easeOutCubic',
     header: '#mainHeader'
 });
