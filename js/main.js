@@ -14,6 +14,12 @@ window.addEventListener("scroll", function () {
 
 const TOGGLEBTN = document.querySelector(".nav-toggle--btn");
 const NAVLINKS = document.querySelector(".mainNav--links");
+const MENUITEMS = document.querySelectorAll(".mainNav--links a");
+
+
+for (let i = 0; i < MENUITEMS.length; i++) {
+    MENUITEMS[i].style.transitionDelay = `${(i+3) * 100}ms`;
+}
 
 TOGGLEBTN.addEventListener("click",function () {
     this.classList.toggle("active");
